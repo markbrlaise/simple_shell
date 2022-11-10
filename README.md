@@ -44,6 +44,7 @@
 <summary>The shell will be compiled this way:</summary>
 <pre>$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 \*.c -o hsh</pre>
 </details>
+
 ## Output
 - Unless specified otherwise, your program must have the exact same output as `sh` (`/bin/sh`) as well as the exact same error output.
 - The only difference is when you print an error, the name of the program must be equivalent to your `argv[0]` (see below)
@@ -55,6 +56,7 @@
 <summary>Same error with your program hsh:</summary>
 <pre>$ echo "qwerty" | ./hsh<br>./hsh: 1: qwerty: not found<br>$ echo "qwerty" | ./././hsh<br>./././hsh: 1: qwerty: not found<br>$</pre>
 </details>
+
 ## Testing
 <details>
 <summary>The shell should work like this in interactive mode:</summary>
@@ -64,10 +66,13 @@
 <summary>But also in non-interactive mode:</summary>
 <pre>$ echo "/bin/ls" | ./hsh<br>hsh main.c shell.c test\_ls\_2<br>$<br>$ cat test\_ls\_2<br>/bin/ls<br>/bin/ls<br>$<br>$ cat test\_ls\_2 | ./hsh<br>hsh main.c shell.c test\_ls\_2<br>hsh main.c shell.c test\_ls\_2<br>$</pre>
 </details>
+
 ## Features
 - To add as we progress
+
 ## Builtins
 - To add as we progress
+
 ## Authors
 - mark_kiguli
 - ashirafkyaze
